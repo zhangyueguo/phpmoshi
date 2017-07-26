@@ -1,0 +1,1 @@
+1.php 实现远程在服务器上打开文件   file = fopen("ftp://user:password@ftp.lapbrother.net/path/to/file", "w");
