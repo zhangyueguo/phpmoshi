@@ -1,1 +1,13 @@
 1.php 实现远程在服务器上打开文件   file = fopen("ftp://user:password@ftp.lapbrother.net/path/to/file", "w");
+
+
+2.php跨域问题：  在php接口脚本中加入以下两句即可：
+
+header('Access-Control-Allow-Origin:*');//允许所有来源访问
+
+header('Access-Control-Allow-Method:POST,GET');//允许访问的方式
+
+
+跨域：指的是浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对JavaScript施加的安全限制。
+
+所谓同源是指，域名，协议，端口均相同，不明白没关系
